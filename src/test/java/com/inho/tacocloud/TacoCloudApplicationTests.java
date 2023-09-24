@@ -1,10 +1,10 @@
-package com.inho.takocloud;
+package com.inho.tacocloud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TakoCloudApplicationTests {
+class TacoCloudApplicationTests {
 
     @Test
     void contextLoads() {

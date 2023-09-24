@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.inho</groupId>
-    <artifactId>tako-cloud</artifactId>
+    <artifactId>taco-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>tako-cloud</name>
-    <description>tako-cloud</description>
+    <name>taco-cloud</name>
+    <description>taco-cloud</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

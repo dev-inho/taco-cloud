@@ -1,7 +1,7 @@
-package com.inho.takocloud.controller;
+package com.inho.tacocloud.controller;
 
-import com.inho.takocloud.tacos.Ingredient;
-import com.inho.takocloud.tacos.Taco;
+import com.inho.tacocloud.tacos.Ingredient;
+import com.inho.tacocloud.tacos.Taco;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package com.inho.takocloud.tacos;
+package com.inho.tacocloud.tacos;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

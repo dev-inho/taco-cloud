@@ -1,8 +1,6 @@
-package com.inho.takocloud.controller;
+package com.inho.tacocloud.controller;
 
-import com.inho.takocloud.tacos.Order;
-import com.inho.takocloud.tacos.Taco;
-import lombok.Value;
+import com.inho.tacocloud.tacos.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,14 +31,5 @@ public class OrderController {
         log.info("Order submitted : {}", order);
 
         return "redirect:/";
-    }
-
-    @PostMapping
-    public String processDesign(@Valid Taco design, Errors errors) {
-        if (errors.hasErrors()) {
-            return "design";
-        }
-
-        return "redirect:/orders/current";
     }
 }

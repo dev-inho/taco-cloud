@@ -1,13 +1,13 @@
-package com.inho.takocloud;
+package com.inho.tacocloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TakoCloudApplication {
+public class TacoCloudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TakoCloudApplication.class, args);
+        SpringApplication.run(TacoCloudApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.inho.takocloud.tacos.web;
+package com.inho.tacocloud.tacos.web;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
