@@ -2,13 +2,29 @@ package com.inho.tacocloud.tacos;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.springframework.data.annotation.CreatedDate;
 
+import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
+@Entity
+@Table(name = "Taco_Order")
 public class Order {
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private LocalDateTime placedAt;
+
     @NotBlank(message = "Name is required")
     private String deliveryName;
 
@@ -32,4 +48,13 @@ public class Order {
 
     @Digits(integer = 3, fraction = 0, message = "Invalid city")
     private String ccCVV;
+
+    @CreatedDate
+    private LocalDateTime createdAt;
+
+    @ManyToMany(targetEntity = Taco.class)
+    private List<Taco> tacos = new ArrayList<>();
+    public void addDesign(Taco design) {
+        this.tacos.add(design);
+    }
 }
