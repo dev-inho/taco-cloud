@@ -1,4 +1,4 @@
-package com.inho.tacocloud.controller;
+package com.inho.tacocloud.tacos.web;
 
 import com.inho.tacocloud.tacos.Order;
 import com.inho.tacocloud.tacos.data.OrderRepository;

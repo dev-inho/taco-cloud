@@ -1,4 +1,4 @@
-package com.inho.tacocloud.controller;
+package com.inho.tacocloud.tacos.web;
 
 import com.inho.tacocloud.tacos.Ingredient;
 import com.inho.tacocloud.tacos.Order;
@@ -44,8 +44,8 @@ public class DesignTacoController {
     public String showDesignForm(Model model) {
         List<Ingredient> ingredientList = new ArrayList<>();
 
-        jdbcIngredientRepository.findAll()
-                .forEach(ingredientList::add);
+//        jdbcIngredientRepository.findAll()
+//                .forEach(ingredientList::add);
 
         Ingredient.Type[] types = Ingredient.Type.values();
 
